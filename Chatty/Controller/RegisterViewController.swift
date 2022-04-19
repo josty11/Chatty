@@ -15,6 +15,11 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emailTextField.layer.cornerRadius = 25
+        passwordTextField.layer.cornerRadius = 25
+        emailTextField.clipsToBounds = true
+        passwordTextField.clipsToBounds = true
     }
     
     

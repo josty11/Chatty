@@ -22,13 +22,18 @@ class ChatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-        messageTextField.layer.cornerRadius = 25
+        messageTextField.layer.cornerRadius = 50
         
         chatTableView.dataSource = self
+        chatTableView.backgroundColor = UIColor(named: K.Colors.darkerGreenBlue)
+        chatTableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
     }
     
     
     @IBAction func sendButtonPressed(_ sender: UIButton) {
+        
+        //add the text to the db
+        //reload the table view
         
     }
     
@@ -50,8 +55,8 @@ extension ChatViewController: UITableViewDataSource {
         return messages.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
-        cell.textLabel?.text = messages[indexPath.row].body
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
+        cell.label.text = messages[indexPath.row].body
         return cell
     }
 }

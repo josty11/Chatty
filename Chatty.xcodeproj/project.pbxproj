@@ -22,6 +22,8 @@
 		49A7BF7B280EB36100643067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A7BF7A280EB36100643067 /* Assets.xcassets */; };
 		49A7BF7D280ECA0900643067 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7BF7C280ECA0900643067 /* Constants.swift */; };
 		49F1AF55280F34EE00BF7B89 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F1AF54280F34EE00BF7B89 /* Message.swift */; };
+		49F1AF5A280F46E000BF7B89 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F1AF58280F46E000BF7B89 /* MessageCell.swift */; };
+		49F1AF5B280F46E000BF7B89 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F1AF59280F46E000BF7B89 /* MessageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		49A7BF7A280EB36100643067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49A7BF7C280ECA0900643067 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		49F1AF54280F34EE00BF7B89 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		49F1AF58280F46E000BF7B89 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		49F1AF59280F46E000BF7B89 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		9E68644798A57684C11B780C /* Pods_Chatty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BFD1A6181F02C83356BBE8 /* Pods-Chatty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatty.debug.xcconfig"; path = "Target Support Files/Pods-Chatty/Pods-Chatty.debug.xcconfig"; sourceTree = "<group>"; };
 		CF0D7C246642EE902E8B2EB7 /* Pods-Chatty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatty.release.xcconfig"; path = "Target Support Files/Pods-Chatty/Pods-Chatty.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 			children = (
 				49A7BF6C280EAAF900643067 /* Main.storyboard */,
 				49A7BF71280EAAFE00643067 /* LaunchScreen.storyboard */,
+				49F1AF58280F46E000BF7B89 /* MessageCell.swift */,
+				49F1AF59280F46E000BF7B89 /* MessageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 				4937ACBC280EEC61001C5BE2 /* Roboto-Regular.ttf in Resources */,
 				4937ACBA280ED282001C5BE2 /* ChattyFont.ttf in Resources */,
 				49A7BF6E280EAAF900643067 /* Main.storyboard in Resources */,
+				49F1AF5B280F46E000BF7B89 /* MessageCell.xib in Resources */,
 				4937ACC5280EFFC2001C5BE2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +280,7 @@
 				49F1AF55280F34EE00BF7B89 /* Message.swift in Sources */,
 				4937ACBE280EF852001C5BE2 /* LoginViewController.swift in Sources */,
 				49A7BF7D280ECA0900643067 /* Constants.swift in Sources */,
+				49F1AF5A280F46E000BF7B89 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
