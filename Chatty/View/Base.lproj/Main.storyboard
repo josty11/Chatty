@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -168,6 +167,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="psn-l7-aIO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -258,6 +258,19 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gfA-vK-Z4J">
                                 <rect key="frame" x="20" y="98" width="374" height="639"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" name="DarkerGreenBlue"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Dab-RL-YKA">
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dab-RL-YKA" id="VGv-5F-WeZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.81176470590000005" green="0.84313725490000002" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CWV-kH-bhL">
                                 <rect key="frame" x="20" y="782" width="304" height="60"/>
@@ -267,15 +280,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzS-0d-FgV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzS-0d-FgV">
                                 <rect key="frame" x="334" y="782" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="UAo-Qm-7Ie"/>
                                     <constraint firstAttribute="height" constant="60" id="nZ8-yi-oBh"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" cornerStyle="large">
-                                    <imageReference key="image" image="paperplane" catalog="system" symbolScale="large"/>
+                                <buttonConfiguration key="configuration" style="plain" image="paperplane.fill" catalog="system" cornerStyle="large">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" name="DarkerBlue"/>
                                     </backgroundConfiguration>
@@ -300,7 +311,13 @@
                             <constraint firstItem="E01-fE-PFK" firstAttribute="bottom" secondItem="CWV-kH-bhL" secondAttribute="bottom" constant="20" id="zR0-ao-N5v"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="IpC-bl-BCS"/>
+                    <navigationItem key="navigationItem" id="IpC-bl-BCS">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="o1i-WH-ES0">
+                            <connections>
+                                <action selector="logOutPressed:" destination="u5F-JD-SoC" id="bwK-xA-Lc5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="chatTableView" destination="gfA-vK-Z4J" id="ORl-5O-4J4"/>
                         <outlet property="messageTextField" destination="CWV-kH-bhL" id="FL7-aO-SMA"/>
@@ -315,7 +332,7 @@
         <segue reference="lug-Pj-hhf"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="paperplane" catalog="system" width="128" height="118"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <namedColor name="DarkerBlue">
             <color red="0.28600001335144043" green="0.32499998807907104" blue="0.44299998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -9,8 +9,8 @@ import Foundation
 
 struct K {
     static let appName = "Chatty"
-    static let welcomeLabel = "Welcome Back"
-    static let fontName = "ChattyFont"
+    static let welcomeLabel = "Welcome Back"    
+    static let cellIdentifier = "cell"
     
     static let welcomeLoginSegue = "welcomeToLogin"
     static let welcomeRegisterSegue = "welcomeToRegister"

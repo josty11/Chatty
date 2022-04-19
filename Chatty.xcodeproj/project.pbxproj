@@ -21,6 +21,7 @@
 		49A7BF73280EAAFE00643067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A7BF71280EAAFE00643067 /* LaunchScreen.storyboard */; };
 		49A7BF7B280EB36100643067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A7BF7A280EB36100643067 /* Assets.xcassets */; };
 		49A7BF7D280ECA0900643067 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7BF7C280ECA0900643067 /* Constants.swift */; };
+		49F1AF55280F34EE00BF7B89 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F1AF54280F34EE00BF7B89 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		49A7BF74280EAAFE00643067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49A7BF7A280EB36100643067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49A7BF7C280ECA0900643067 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		49F1AF54280F34EE00BF7B89 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		9E68644798A57684C11B780C /* Pods_Chatty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BFD1A6181F02C83356BBE8 /* Pods-Chatty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatty.debug.xcconfig"; path = "Target Support Files/Pods-Chatty/Pods-Chatty.debug.xcconfig"; sourceTree = "<group>"; };
 		CF0D7C246642EE902E8B2EB7 /* Pods-Chatty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatty.release.xcconfig"; path = "Target Support Files/Pods-Chatty/Pods-Chatty.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		49A7BF80280ECA4200643067 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				49F1AF54280F34EE00BF7B89 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				49A7BF69280EAAF900643067 /* SceneDelegate.swift in Sources */,
 				4937ACC2280EF872001C5BE2 /* ChatViewController.swift in Sources */,
 				4937ACC0280EF862001C5BE2 /* RegisterViewController.swift in Sources */,
+				49F1AF55280F34EE00BF7B89 /* Message.swift in Sources */,
 				4937ACBE280EF852001C5BE2 /* LoginViewController.swift in Sources */,
 				49A7BF7D280ECA0900643067 /* Constants.swift in Sources */,
 			);
