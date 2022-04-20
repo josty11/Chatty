@@ -18,6 +18,13 @@ struct K {
     static let loginToChatSegue = "loginToChat"
     static let registerToChatSegue = "registerToChat"
     
+    struct FStore {
+        static let collectionName = "Messages"
+        static let senderField = "sender"
+        static let bodyField = "body"
+        static let dateField = "date"
+    }
+    
     struct Colors {
         static let yellow = "ChattyYellow"
         static let darkerBlue = "DarkerBlue"

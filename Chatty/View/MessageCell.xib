@@ -16,68 +16,72 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="59" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Chatty" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="534" height="59"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="155" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Chatty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="465" height="155"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="534" height="59"/>
+                <rect key="frame" x="0.0" y="0.0" width="465" height="155"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Sew-Ua-FPS">
-                        <rect key="frame" x="10" y="10" width="514" height="40"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Sew-Ua-FPS">
+                        <rect key="frame" x="10" y="10" width="445" height="135"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="You" translatesAutoresizingMaskIntoConstraints="NO" id="lLA-Lw-Yb4" userLabel="Left Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="On8-1p-uir"/>
+                                    <constraint firstAttribute="height" constant="40" id="cYl-cy-dAn"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNu-dC-TDi">
-                                <rect key="frame" x="0.0" y="0.0" width="454" height="40"/>
+                                <rect key="frame" x="70" y="0.0" width="305" height="135"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVg-rW-1WB">
-                                        <rect key="frame" x="10" y="10" width="434" height="20"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="30"/>
-                                        <color key="textColor" name="DarkerGreenBlue"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gaslidyasilufydbaslifyulaisuyflasudyfblkuasy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVg-rW-1WB">
+                                        <rect key="frame" x="10" y="10" width="285" height="115"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" name="ChattyYellow"/>
                                 <constraints>
-                                    <constraint firstItem="qVg-rW-1WB" firstAttribute="leading" secondItem="WNu-dC-TDi" secondAttribute="leading" constant="10" id="06l-Dq-RP9"/>
-                                    <constraint firstItem="qVg-rW-1WB" firstAttribute="top" secondItem="WNu-dC-TDi" secondAttribute="top" constant="10" id="1vb-7b-6qs"/>
-                                    <constraint firstAttribute="bottom" secondItem="qVg-rW-1WB" secondAttribute="bottom" constant="10" id="gWA-j6-cqK"/>
-                                    <constraint firstAttribute="trailing" secondItem="qVg-rW-1WB" secondAttribute="trailing" constant="10" id="rHE-hV-pu0"/>
+                                    <constraint firstAttribute="bottom" secondItem="qVg-rW-1WB" secondAttribute="bottom" constant="10" id="6xo-Xh-gBV"/>
+                                    <constraint firstItem="qVg-rW-1WB" firstAttribute="leading" secondItem="WNu-dC-TDi" secondAttribute="leading" constant="10" id="dPh-EB-tRK"/>
+                                    <constraint firstAttribute="trailing" secondItem="qVg-rW-1WB" secondAttribute="trailing" constant="10" id="mHM-MV-WK8"/>
+                                    <constraint firstItem="qVg-rW-1WB" firstAttribute="top" secondItem="WNu-dC-TDi" secondAttribute="top" constant="10" id="xbk-a5-yBH"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Girl" translatesAutoresizingMaskIntoConstraints="NO" id="Z6E-1w-Jzl">
-                                <rect key="frame" x="474" y="0.0" width="40" height="40"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Me" translatesAutoresizingMaskIntoConstraints="NO" id="Z6E-1w-Jzl">
+                                <rect key="frame" x="405" y="0.0" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="9GJ-i3-S6W"/>
                                     <constraint firstAttribute="width" constant="40" id="whd-7z-Bdh"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="WNu-dC-TDi" firstAttribute="top" secondItem="Sew-Ua-FPS" secondAttribute="top" id="LRs-CL-qNu"/>
-                            <constraint firstItem="WNu-dC-TDi" firstAttribute="leading" secondItem="Sew-Ua-FPS" secondAttribute="leading" id="MeH-Td-dLS"/>
-                            <constraint firstItem="Z6E-1w-Jzl" firstAttribute="leading" secondItem="WNu-dC-TDi" secondAttribute="trailing" constant="20" id="Zib-Mi-oV5"/>
-                            <constraint firstAttribute="bottom" secondItem="WNu-dC-TDi" secondAttribute="bottom" id="cCQ-9e-Bv8"/>
-                        </constraints>
                     </stackView>
                 </subviews>
+                <color key="backgroundColor" name="DarkerGreenBlue"/>
                 <constraints>
-                    <constraint firstItem="Sew-Ua-FPS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="G2O-BN-PC8"/>
-                    <constraint firstAttribute="bottom" secondItem="Sew-Ua-FPS" secondAttribute="bottom" constant="10" id="U9R-Rg-HwL"/>
-                    <constraint firstItem="Sew-Ua-FPS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="erS-pi-IaP"/>
-                    <constraint firstAttribute="trailing" secondItem="Sew-Ua-FPS" secondAttribute="trailing" constant="10" id="tiF-cI-3KL"/>
+                    <constraint firstAttribute="trailing" secondItem="Sew-Ua-FPS" secondAttribute="trailing" constant="10" id="5UM-27-SEm"/>
+                    <constraint firstAttribute="bottom" secondItem="Sew-Ua-FPS" secondAttribute="bottom" constant="10" id="X2f-E3-crE"/>
+                    <constraint firstItem="Sew-Ua-FPS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hVv-re-Le2"/>
+                    <constraint firstItem="Sew-Ua-FPS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="t4v-rF-T0A"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="label" destination="qVg-rW-1WB" id="ah2-OY-6dc"/>
+                <outlet property="leftImageView" destination="lLA-Lw-Yb4" id="srY-p5-GGe"/>
                 <outlet property="messageBubble" destination="WNu-dC-TDi" id="fBn-aH-QWf"/>
                 <outlet property="rightImageView" destination="Z6E-1w-Jzl" id="toD-vV-TXv"/>
             </connections>
-            <point key="canvasLocation" x="44.927536231884062" y="3.0133928571428572"/>
+            <point key="canvasLocation" x="-150" y="33.816964285714285"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Girl" width="400" height="400"/>
+        <image name="Me" width="400" height="400"/>
+        <image name="You" width="400" height="400"/>
         <namedColor name="ChattyYellow">
             <color red="0.94499999284744263" green="0.87800002098083496" blue="0.67500001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
