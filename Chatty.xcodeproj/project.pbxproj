@@ -24,6 +24,7 @@
 		49F1AF5A280F46E000BF7B89 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F1AF58280F46E000BF7B89 /* MessageCell.swift */; };
 		49F1AF5B280F46E000BF7B89 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F1AF59280F46E000BF7B89 /* MessageCell.xib */; };
 		49FD216828107E9D0069B14B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49FD216728107E9D0069B14B /* GoogleService-Info.plist */; };
+		49FD216A28107F5A0069B14B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 49FD216928107F5A0069B14B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		49F1AF58280F46E000BF7B89 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		49F1AF59280F46E000BF7B89 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		49FD216728107E9D0069B14B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49FD216928107F5A0069B14B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9E68644798A57684C11B780C /* Pods_Chatty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BFD1A6181F02C83356BBE8 /* Pods-Chatty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatty.debug.xcconfig"; path = "Target Support Files/Pods-Chatty/Pods-Chatty.debug.xcconfig"; sourceTree = "<group>"; };
 		CF0D7C246642EE902E8B2EB7 /* Pods-Chatty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatty.release.xcconfig"; path = "Target Support Files/Pods-Chatty/Pods-Chatty.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		49A7BF5A280EAAF900643067 = {
 			isa = PBXGroup;
 			children = (
+				49FD216928107F5A0069B14B /* README.md */,
 				49A7BF65280EAAF900643067 /* Chatty */,
 				49A7BF64280EAAF900643067 /* Products */,
 				C0EA70F92DF4FB7F22762D43 /* Pods */,
@@ -219,6 +222,7 @@
 				4937ACBA280ED282001C5BE2 /* ChattyFont.ttf in Resources */,
 				49A7BF6E280EAAF900643067 /* Main.storyboard in Resources */,
 				49F1AF5B280F46E000BF7B89 /* MessageCell.xib in Resources */,
+				49FD216A28107F5A0069B14B /* README.md in Resources */,
 				49FD216828107E9D0069B14B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
